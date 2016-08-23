@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css3三角形实现__样式</title>
+    <meta charset="UTF-8">
+    <style>
+        *{
+            font-family: simhei,sans-serif;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            background-color: lightblue;
+        }
+       .house{
+           float: left;
+           width:45%;
+           height:50rem;
+           margin: 10rem 7% 0;
+       }
+        .headH{
+            width:100%;
+            height: 0;
+            border: 10rem solid transparent;
+            border-bottom-color: red;
+        }
+        .bodyH{
+            width:80%;
+            height: 50%;
+            margin: 0 auto;
+            background-color: snow;
+            overflow: hidden;
+        }
+        .windows,.windows td{
+            border: 1px solid red;
+        }
+        .windows{
+            width:30%;
+            height: 30%;
+            margin: 10% 0 0 20%;
+            float: left;
+        }
+        .door{
+            width:25%;
+            height: 65%;
+            margin-top: 23%;
+            margin-right: 10%;
+            background-color: lightcoral;
+            float: right;
+        }
+        .sun{
+            float: right;
+            margin-right: 10%;
+            width:20%;
+            height: 30rem;
+            background: -webkit-radial-gradient(circle, red 15%, yellow 10%, lightblue 60%); /* Safari 5.1 - 6.0 */
+            background: -o-radial-gradient(circle, red 15%, yellow 10%, lightblue  60%); /* Opera 11.6 - 12.0 */
+            background: -moz-radial-gradient(circle, red 15%, yellow 10%, lightblue  60%); /* Firefox 3.6 - 15 */
+            background: radial-gradient(circle, red 15%, yellow 10%, lightblue  60%); /* 标准的语法（必须放在最后） */
+        }
+    </style>
+</head>
+<body>
+<div class="house">
+    <div class="headH"></div>
+    <div class="bodyH">
+        <table class="windows">
+            <tr><td></td><td></td></tr>
+            <tr><td></td><td></td></tr>
+        </table>
+        <div class="door"></div>
+    </div>
+</div>
+<div class="sun"></div>
+</body>
+</html>
