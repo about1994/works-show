@@ -1,0 +1,321 @@
+h1{
+    color: #eee;
+    font-size:30px;
+    text-align: center;
+    margin: 60px 0 50px 0;
+    text-shadow: 0 1px black;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+}
+.left h1{
+    color: black;
+}
+/*笔记*/
+#note{
+    color:#333;
+    font-size: 22px;
+    width:80%;
+    transition: color 5s;
+}
+/*左边主题样式*/
+.left{
+    background: lightcyan;
+    overflow: hidden;
+}
+.sun{
+    width:10%;
+    height:10%;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0 0 60px rgba(255,255,0,255);
+    margin-left: 60%;
+}
+.house{
+    width:60%;
+    height:50%;
+    margin-top: 20%;
+    border-radius: 9px;
+}
+.house .roof{
+    border:70px solid lightcyan;
+    border-bottom-color:red ;
+    width:100%;
+    height: 0;
+}
+.house .body{
+    position: relative;
+    margin: 0 auto;
+    width:80%;
+    background: rgba(255,248,220,0.7);
+    height:50%;
+    overflow: hidden;
+}
+.house .window table{
+    position: absolute;
+    border: 1px solid red;
+    width:20%;
+    height:50px;
+    left: 15%;
+    top: 20%;
+}
+.house .window table td{
+    border: 1px solid red;
+}
+.house .door{
+    position: absolute;
+    right:15%;
+    bottom: 0;
+    width: 25%;
+    height:130px;
+    background-color:rgba(0,255,127,0.5) ;
+}
+/*右边主题样式设制*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.right{
+    background: #333;
+    font-weight: 300;
+    font-family: 'Open Sans',sans-setif;
+    overflow: hidden;
+}
+.ondisplay{
+    text-align: center;
+    padding:60px 0;
+}
+.right section{
+    width:100px;
+    height: 100px;
+    background: #555;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+.rigght section:before{
+    content:"click it";
+    font-size: 12px;
+    color:#bbb;
+}
+.right section:after{
+    content: attr(title);
+    font-size: 12px;
+    color:#bbb;
+    position: absolute;
+    left:0;
+    bottom:3px;
+    width:100%;
+}
+/* slide */
+.slideOne,.slideTwo,.slideThree,.roundOne,.roundTwo,.roundThree{
+    background: #333;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5),rgba(255,255,255,0.2) ;
+}
+.slideOne label,.slideTwo label,.slideThree label{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    background: linear-gradient(to bottom,#fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+    border-radius: 50px;
+}
+.slideOne{
+    width: 50px;
+    height:10px;
+}
+.slideOne label{
+    width:16px;
+    height: 16px;
+    top:-3px;
+    left: -3px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+}
+.slideOne input[type=checkbox],.slideTwo input[type=checkbox],
+.slideThree input[type=checkbox],.roundOne input[type=checkbox],
+.roundTwo input[type=checkbox],.roundThree input[type=checkbox]{
+    visibility: hidden;
+}
+.slideOne input[type=checkbox]:checked+label{
+    left: 37px;
+}
+.slideTwo{
+    width:80px;
+    height: 30px;
+}
+.slideTwo:after{
+    content: "";
+    position: absolute;
+    left:14px;
+    top:14px;
+    width:55px;
+    height: 2px;
+    background: #111;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5),rgba(255,255,255,0.2);
+}
+.slideTwo label{
+    width: 22px;
+    height: 22px;
+    left: 4px;
+    top:4px;
+    z-index: 1;
+}
+.slideTwo label:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:6px;
+    left: 6px;
+    border-radius: 50px;
+    background-color: #00bf00;
+    box-shadow: inset 0 1px 1px black,0 1px 0 rgba(255,255,255,0.9);
+}
+.slideTwo input[type=checkbox]:checked+label{
+    left: 50px;
+}
+.slideThree{
+    width:80px;
+    height:30px;
+}
+.slideThree:before{
+    content: "ON";
+    color: #00ee00;
+    position: absolute;
+    left: 8px;
+    top:7px;
+    font-size: 12px;
+}
+.slideThree:after{
+    content: "OFF";
+    color: #00ee00;
+    position: absolute;
+    left: 50px;
+    top:7px;
+    font-size: 12px;
+}
+.slideThree label{
+    width:30px;
+    height:22px;
+    top:3px;
+    left: 5px;
+    z-index: 2;
+}
+.slideThree input[type=checkbox]:checked+label{
+    left: 45px;
+}
+/*rounde*/
+.roundOne,.roundTwo,.roundThree{
+    width:28px;
+    height:28px;
+    background: linear-gradient(to bottom,#dfe5d7 40%,#b3bead 100%);
+}
+.roundOne:after,.roundTwo:after,.roundThree:after{
+    content: "";
+    width:20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color:#333;
+   position: absolute;
+    top:4px;
+    left:4px;
+}
+.roundOne label,.roundThree label{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    position: absolute;
+    top:6px;
+    left:6px;
+    z-index: 1;
+}
+.roundOne label:hover,.roundThree label:hover{
+    background-color: rgba(102,205,170,0.4);
+}
+.roundOne input[type=checkbox]:checked+label,.roundThree input[type=checkbox]:checked+label{
+    background-color: #00bf00;
+}
+.roundTwo label{
+    width: 8px;
+    height: 13px;
+    position: absolute;
+    top:7px;
+    left: 10px;
+    z-index: 2;
+    border: 4px solid;
+    border-top: none;
+    border-left: none;
+    transform: rotate(42deg);
+}
+.roundTwo label:hover{
+    border-color: rgba(245,245,245,0.2);
+}
+.roundTwo input[type=checkbox]:checked+label{
+    border-color: #fcfff4;
+}
+.roundThree{
+    border-radius: 2px;
+}
+.roundThree:after{
+    border-radius:2px;
+}
+.roundThree label{
+    border-radius: 2px;
+}
+@media (max-width: 767px) {
+    .left,.right{
+        width:100%;
+        height:667px;
+    }
+    .house .roof{
+        border:35px solid lightcyan;
+        border-bottom-color:red ;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .left,.right{
+        width:100%;
+        height:667px;
+    }
+    .house{
+        width: 50%;
+        margin-top: 10%;
+    }
+    .house .roof{
+        border-width: 65px;
+    }
+    .sun{
+        margin-left: 70%;
+    }
+}
+@media (min-width:992px) and (max-width: 1370px){
+    .left,.right{
+        width:50%;
+        height:667px;
+        float: left;
+    }
+    #note{
+        margin: 10% auto 0;
+    }
+    .house{
+        margin-top: 10%;
+    }
+}
+@media (min-width:1371px){
+    .left,.right{
+        width:50%;
+        height:773px;
+        float: left;
+    }
+    #note{
+        margin: 20% auto 0px;
+    }
+}
