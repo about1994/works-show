@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #00ffff;
+    color: #363844;
+    padding: 40px 0;
+    font-family: 'Lato',sans-serif;
+}
+.cassette{
+    position: relative;
+    margin: 0 auto;
+    background-color: #d55e40;
+    border-radius: 16px;
+    width:534px;
+    height: 335px;
+    overflow: hidden;
+}
+/*.cassette:before{
+    position: absolute;
+    bottom: 20px;
+    height: 90px;
+    border-right: #d55e40 solid 4px;
+    border-top: transparent solid 10px;
+    border-bottom: transparent solid 10px;
+}*/
+.screw{
+    position: absolute;
+    top:6px;
+    left: 7px;
+    width:22px;
+    height: 22px;
+    background: #8b392e;
+    border-radius: 50%;
+    box-shadow: 500px 0 0 #8b392e,0 300px #8b392e,500px 300px #8b392e;
+}
+.screw-inner:before,.screw-inner:after{
+    content: "";
+    position: absolute;
+    width:5px;
+    height:16px;
+    border-radius:2px;
+    background-color: #449ba2;
+    left:43%;
+    top:10%;
+}
+.screw-inner:before{
+    -moz-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+    box-shadow: 321px -382px 0 #449ba2,230px 193px 0 #449ba2,552px -190px 0 #449ba2;
+}
+.screw-inner:after{
+    -moz-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    box-shadow: 321px 383px 0 #449ba2,-230px 193px 0 #449ba2,91px 576px 0 #449ba2;
+}
+.outer-sticker{
+    background-color: #f3ae53;
+    border: 5px solid #8b392e;
+    width:474px;
+    height: 210px;
+    position: relative;
+    margin: 25px auto 0;
+    border-radius: 16px;
+}
+.sticker-header{
+    padding: 10px 20px 0;
+    width: 100%;
+}
+.sticker-header .side{
+    float: left;
+    font-weight: 700;
+    font-size: 30px;
+    color:#f3ae53;
+    padding: 0px 5px 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #d55e40;
+}
+.sticker-header .notes{
+    float: left;
+    width:374px;
+    margin-left: 15px;
+}
+.sticker-header .notes hr{
+    background: #756046;
+    margin-top: 13px;
+    height: 3px;
+}
+.sticker-center{
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.sticker-center .stripe-a,.sticker-center .stripe-b{
+    width:100%;
+    height: 30px;
+}
+.sticker-center .stripe-a{
+    background-color: #8c392e;
+}
+.sticker-center .stripe-b{
+    background-color: #449ba2;
+    margin-top: 30px;
+}
+.sticker-center .cassete-center{
+    position: absolute;
+    background-color: #d55e40;
+    width:318px;
+    height: 92px;
+    top:0;
+    left: 16%;
+    border-radius: 16px;
+}
+.sticker-center .cassete-center .circle{
+    background-color: #fff;
+    width:65px;
+    height: 65px;
+    position: absolute;
+    top:12px;
+    border-radius: 50%;
+    -moz-animation: spin 5s infinite linear;
+    -webkit-animation: spin 5s infinite linear;
+    animation: spin 5s infinite linear;
+}
+.sticker-center .cassete-center .circle:nth-child(1){
+    left: 20px;
+}
+.sticker-center .cassete-center .circle:nth-child(2){
+    right: 20px;
+}
+.sticker-center .cassete-center .circle i{
+    border-top: 15px solid #d55e40;
+    position: absolute;
+    width:5%;
+    height: 55%;
+    z-index: 99;
+    top:-5%;
+    left: 45%;
+    transform-origin: 50% 100%;
+}
+.sticker-center .cassete-center .circle i:nth-child(1){
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.sticker-center .cassete-center .circle i:nth-child(1){
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.sticker-center .cassete-center .circle i:nth-child(1){
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.sticker-center .cassete-center .circle i:nth-child(2){
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.sticker-center .cassete-center .circle i:nth-child(3){
+    -moz-transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+}
+.sticker-center .cassete-center .circle i:nth-child(4){
+    -moz-transform: rotate(210deg);
+    -webkit-transform: rotate(210deg);
+    transform: rotate(210deg);
+}
+.sticker-center .cassete-center .circle i:nth-child(5){
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.sticker-center .cassete-center .circle i:nth-child(6){
+    -moz-transform: rotate(330deg);
+    -webkit-transform: rotate(330deg);
+    transform: rotate(330deg);
+}
+.sticker-center .cassete-center .window{
+   position: absolute;
+    left: 31%;
+    top:17%;
+    overflow: hidden;
+    width:122px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: white;
+}
+.sticker-center .cassete-center .window .reel{
+    background-color: #8b392e;
+    border-radius: 50%;
+    width:190px;
+    height: 190px;
+    position: absolute;
+    -webkit-animation: spin 5s infinite linear;
+    -moz-animation: spin 5s infinite linear;
+    animation: spin 5s infinite linear;
+}
+.sticker-center .cassete-center .window .reel:nth-child(1){
+    top:-122%;
+    left: 64%;
+}
+.sticker-center .cassete-center .window .reel:nth-child(2){
+    top:-122%;
+    right: 64%;
+}
+.outer-sticker .sticker-bottom{
+    width: 95%;
+    position: absolute;
+    left: 2%;
+    bottom: 4%;
+    border:1px solid black;
+    border-left: transparent;
+    border-right: transparent;
+}
+.outer-sticker .sticker-bottom hr{
+    height: 2px;
+    width:154px;
+    background-color: black;
+    margin-top: 10px;
+}
+.outer-sticker .sticker-bottom hr:nth-child(1){
+    float: left;
+}
+.outer-sticker .sticker-bottom hr:nth-child(2){
+    float: right;
+}
+.outer-sticker .sticker-bottom p{
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 20px;
+}
+.cassette-bottom-outer{
+    width: 350px;
+    position: absolute;
+    left: 18%;
+    bottom: 0;
+    border-bottom: 80px solid #8b392e;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.cassette-bottom-outer .cassette-bottom{
+     width: 340px;
+     position: absolute;
+    left: -5%;
+    z-index: 99;
+    height: 0;
+    margin-top: 5px;
+     border-bottom: 80px solid #d55e40;
+     border-left: 20px solid transparent;
+     border-right: 20px solid transparent;
+ }
+.note{
+    width:50%;
+    margin: 10% auto;
+    font-size: 20px;
+}
+.note a{
+    color:#0071e8;
+    text-decoration: none;
+}
+@keyframes spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform:rotate(0deg) ;
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform:rotate(180deg) ;
+    }
+}
+@-webkit-keyframes spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform:rotate(0deg) ;
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform:rotate(180deg) ;
+    }
+}
+@-moz-keyframes spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform:rotate(0deg) ;
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform:rotate(180deg) ;
+    }
+}
